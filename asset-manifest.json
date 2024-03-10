@@ -1,17 +1,27 @@
 {
   "files": {
     "main.css": "/portfolio-react-v2/static/css/main.fe217b3f.css",
-    "main.js": "/portfolio-react-v2/static/js/main.2690be92.js",
+    "main.js": "/portfolio-react-v2/static/js/main.9790662c.js",
     "static/js/453.906b0208.chunk.js": "/portfolio-react-v2/static/js/453.906b0208.chunk.js",
+    "static/media/flavorwiki1.png": "/portfolio-react-v2/static/media/flavorwiki1.c1bfe9056fd166d6e940.png",
+    "static/media/flavorwiki3.png": "/portfolio-react-v2/static/media/flavorwiki3.6f912cd7cd0c66c4ebb7.png",
+    "static/media/flavorwiki2.png": "/portfolio-react-v2/static/media/flavorwiki2.b9d828f9a572a937c45f.png",
+    "static/media/flavorwiki5.png": "/portfolio-react-v2/static/media/flavorwiki5.9004cf895a98174e169e.png",
     "static/media/profile.png": "/portfolio-react-v2/static/media/profile.4fd9492490b928c676e5.png",
+    "static/media/flavorwiki4.png": "/portfolio-react-v2/static/media/flavorwiki4.742bdfbae3da894a405b.png",
+    "static/media/fyp3.png": "/portfolio-react-v2/static/media/fyp3.1106bce925df8d173da8.png",
+    "static/media/fyp2.png": "/portfolio-react-v2/static/media/fyp2.40b2443d6143fc1d66f6.png",
+    "static/media/fyp1.png": "/portfolio-react-v2/static/media/fyp1.bd8ea2881f0fbb48f519.png",
+    "static/media/fyp5.png": "/portfolio-react-v2/static/media/fyp5.071ebb23aec73fad1446.png",
+    "static/media/fyp4.png": "/portfolio-react-v2/static/media/fyp4.109bf8e99c8860531382.png",
     "static/media/logo.png": "/portfolio-react-v2/static/media/logo.bf7860bec1a06e33b3f3.png",
     "index.html": "/portfolio-react-v2/index.html",
     "main.fe217b3f.css.map": "/portfolio-react-v2/static/css/main.fe217b3f.css.map",
-    "main.2690be92.js.map": "/portfolio-react-v2/static/js/main.2690be92.js.map",
+    "main.9790662c.js.map": "/portfolio-react-v2/static/js/main.9790662c.js.map",
     "453.906b0208.chunk.js.map": "/portfolio-react-v2/static/js/453.906b0208.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe217b3f.css",
-    "static/js/main.2690be92.js"
+    "static/js/main.9790662c.js"
   ]
 }
