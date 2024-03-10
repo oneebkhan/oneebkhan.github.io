@@ -15,11 +15,11 @@ export const Container = styled.div`
 `
 
 export const Title = styled.div`
+  padding-bottom: 1rem;
   font-size: 40px;
   font-weight: 100;
   line-height: 1.8;
   opacity: 0.9;
-  padding-bottom: 1rem;
   letter-spacing: 5px;
   text-decoration: underline;
   text-underline-offset: 1rem;

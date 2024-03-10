@@ -1,9 +1,9 @@
 import React from 'react'
+import Parallax from './Parallax';
+import {PROJECTS} from '../../utils/constants'
 
 const ProjectsComponent = () => {
-  return (
-    <div>Projects</div>
-  )
+  return <Parallax projects={PROJECTS} />;
 }
 
 export default ProjectsComponent
