@@ -59,8 +59,8 @@ export const ProjectCardAction = styled.a`
 export const ProjectCardImage = styled.img`
   height: 100%;
   width: 100%;
-  object-fit: cover;
-  object-position: left top;
+  object-fit: contain;
+  object-position: center;
   position: absolute;
   top: 0;
   right: 0;
