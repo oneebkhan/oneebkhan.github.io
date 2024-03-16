@@ -28,7 +28,7 @@ const HorizontalScrollCarousel = ({ cards = [], title = "", description }) => {
           <TextContainer>
             <motion.div
               viewport={{ once: true }}
-              initial={{ opacity: 0, translateY: -100 }}
+              initial={{ opacity: 0, translateY: -30 }}
               whileInView={{ opacity: 1, translateY: 0 }}
               transition={{ duration: 0.5 }}
             >
@@ -37,7 +37,7 @@ const HorizontalScrollCarousel = ({ cards = [], title = "", description }) => {
 
             <motion.div
               viewport={{ once: true }}
-              initial={{ opacity: 0, translateY: -100 }}
+              initial={{ opacity: 0, translateY: -30 }}
               whileInView={{ opacity: 1, translateY: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >

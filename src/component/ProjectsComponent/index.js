@@ -1,9 +1,8 @@
 import React from 'react'
-import Parallax from './Parallax';
-import {PROJECTS} from '../../utils/constants'
+import { ProjectScrollCard } from './ProjectScrollCard';
 
-const ProjectsComponent = () => {
-  return <Parallax projects={PROJECTS} />;
+const ProjectsComponent = ({content}) => {
+  return <ProjectScrollCard content={content}/>
 }
 
 export default ProjectsComponent

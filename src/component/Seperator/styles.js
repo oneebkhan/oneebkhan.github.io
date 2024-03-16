@@ -5,6 +5,7 @@ export const DividerVerticalContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5rem 0rem;
 `
 
 export const DividerVertical = styled.div`

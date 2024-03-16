@@ -4,8 +4,6 @@ export const IntroductionContainer = styled.div`
   height: 100vh;
   background: ${(props) => `url(${props.image})`} center center no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   filter: brightness(30%);
   top: 0;
   left: 0;
@@ -16,8 +14,8 @@ export const IntroductionContainer = styled.div`
   animation: opacityOffset 1500ms;
 
   @keyframes opacityOffset {
-    0% { filter: brightness(0%); }
-    100% { filter: brightness(30%); }
+    0% { filter: brightness(0%); background-position: top;  }
+    100% { filter: brightness(30%); background-position: center; }
   }
 `;
 

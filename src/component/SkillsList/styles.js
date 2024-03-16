@@ -1,4 +1,23 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
+
+export const MainContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+`;
+
+export const Background = styled(motion.div)`
+  background: rgb(45 37 33 / 28%);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 2rem;
+  max-width: 1200px;
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -6,24 +25,22 @@ export const Container = styled.div`
   align-items: center;
   gap: 3rem;
   transition: 500ms;
-  padding: 2rem;
 
   @media (max-width: 600px) {
     flex-direction: column;
     justify-items: center;
   }
-`
+`;
 
 export const Title = styled.div`
   padding-bottom: 1rem;
-  font-size: 40px;
-  font-weight: 100;
-  line-height: 1.8;
-  opacity: 0.9;
+  text-align: start;
+
+  font-size: 3.7rem;
+  font-weight: bold;
   letter-spacing: 5px;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-thickness: from-font;
+  opacity: 0.8;
+  text-shadow: 0 2px 4px rgba(71, 97, 206, 0.36);
 
   @media (max-width: 600px) {
     font-size: 35px;
@@ -38,43 +55,11 @@ export const Text = styled.span`
   opacity: 0.6;
 
   @media (max-width: 600px) {
-    font-size: 17px;
+    font-size: 15px;
   }
 `;
 
 export const TextContainer = styled.div`
   flex: 1;
   max-width: 700px;
-`
-
-export const SkillsListContainer = styled.div`
-  flex: 1;
-  max-width: 700px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  align-items: center;
-  gap: 2rem;
-
-  @media (max-width: 600px) {
-    justify-content: center;
-  }
-`
-
-export const StyledCard = styled.div`
-  text-align: center;
-  height: 1.8rem;
-  width: 1.8rem;
-  font-size: 1.8rem;
-  border-radius: 50%;
-  padding: 12px;
-  transition: 0.5s;
-  
-  &:hover {
-    transform: scale(1.3);
-    background-color: ${props => props.colorprop};
-    div svg {
-      fill: ${props => props.colorproptext};
-    }
-  }
-`
+`;

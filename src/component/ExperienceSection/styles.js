@@ -35,12 +35,10 @@ export const StyledSection = styled.section`
 
 export const InnerStyledDiv = styled.section`
   position: sticky;
-  padding-top: 8rem;
   top: 0px;
   height: 100vh;
 
   @media (max-width: 800px) {
-    padding-top: 7rem;
   }
 `;
 
@@ -64,7 +62,6 @@ export const TextContainer = styled.div`
 
   @media (max-width: 800px) {
     padding: 3vh 2rem;
-    padding-bottom: 1rem;
   }
 `;
 
@@ -82,11 +79,11 @@ export const Text = styled.span`
 `;
 
 export const Title = styled.div`
-  font-size: 40px;
-  font-weight: 200;
-  line-height: 1.3;
-  opacity: 0.9;
+  font-size: 3.7rem;
+  font-weight: bold;
   letter-spacing: 5px;
+  opacity: 0.8;
+  text-shadow: 0 2px 4px rgba(71, 97, 206, 0.36);
 
   @media (max-width: 600px) {
     font-size: 35px;

@@ -4,8 +4,8 @@ import {
   Title,
   Text,
   TextContainer,
-  SkillsListContainer,
-  StyledCard,
+  MainContainer,
+  Background,
 } from "./styles";
 import {
   SiExpress,
@@ -18,6 +18,7 @@ import {
 } from "react-icons/si";
 import { FaReact, FaNode } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Tags from "../Tags";
 
 function calculateYears() {
   const startingDate = new Date("01/09/2021");
@@ -83,69 +84,51 @@ const LIST_OF_SKILLS = [
   },
 ];
 
-const Card = ({ name, icon, colorprop, colorproptext, index }) => {
-  return (
-    <StyledCard colorprop={colorprop} colorproptext={colorproptext}>
-      <motion.div
-        viewport={{ once: true }}
-        initial={{ opacity: 0, translateY: -100 }}
-        whileInView={{ opacity: 1, translateY: 0 }}
-        transition={{ duration: 0.5, delay: index / 15 + 0.5 }}
-      >
-        {icon}
-      </motion.div>
-    </StyledCard>
-  );
-};
-
 const SkillsList = () => {
   return (
-    <React.Fragment>
-      <motion.div
+    <MainContainer>
+      <Background
         viewport={{ once: true }}
-        initial={{ opacity: 0, translateY: -100 }}
+        initial={{ opacity: 0, translateY: -30 }}
         whileInView={{ opacity: 1, translateY: 0 }}
         transition={{ duration: 0.5 }}
-        style={{ textAlign: "center", paddingTop: "2rem" }}
       >
-        <Title>A Little Self-Introduction</Title>
-      </motion.div>
-      <Container>
-        <TextContainer>
           <motion.div
             viewport={{ once: true }}
-            initial={{ opacity: 0, translateY: -100 }}
+            initial={{ opacity: 0, translateY: -30 }}
             whileInView={{ opacity: 1, translateY: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            style={{}}
           >
-            <Text>
-              I am a full stack software engineer with over {calculateYears()}+
-              years of experince developing digital solutions for
-              diverse problems.
-              <br />
-              <br />I have experience with full-stack web development using
-              technologies like GraphQL, NodeJS, ExpressJS, React, MongoDB,
-              SailsJS, SQL, PostgreSQL, NestJS, Django, Python, Javascript and
-              Typescript.
-            </Text>
+            <Title>About Me</Title>
           </motion.div>
-        </TextContainer>
-        <SkillsListContainer>
-          {LIST_OF_SKILLS.map((skill, skillIndex) => {
-            return (
-              <Card
-                key={skill.name}
-                name={skill.name}
-                icon={skill.icon}
-                colorprop={skill.colorprop}
-                colorproptext={skill.colorproptext}
-                index={skillIndex}
-              />
-            );
-          })}
-        </SkillsListContainer>
-      </Container>
-    </React.Fragment>
+          <Container>
+            <TextContainer>
+              <motion.div
+                viewport={{ once: true }}
+                initial={{ opacity: 0, translateY: -30 }}
+                whileInView={{ opacity: 1, translateY: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
+                <Text>
+                  <p>
+                    I am a full stack software engineer with over{" "}
+                    {calculateYears()}+ years of experince developing digital
+                    solutions for diverse problems.
+                  </p>
+                  <p>
+                    I have experience with full-stack web development using
+                    technologies like GraphQL, NodeJS, ExpressJS, React,
+                    MongoDB, SailsJS, SQL, PostgreSQL, NestJS, Django, Python,
+                    Javascript and Typescript.
+                  </p>
+                </Text>
+              </motion.div>
+            </TextContainer>
+            <Tags tags={LIST_OF_SKILLS}/>
+          </Container>
+        </Background>
+    </MainContainer>
   );
 };
 

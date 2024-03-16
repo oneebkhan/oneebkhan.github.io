@@ -7,7 +7,6 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 15vh 0rem;
 `;
 
 export const Circles = styled.ul`
@@ -108,8 +107,23 @@ export const Circles = styled.ul`
   @keyframes animate {
     0% {
       transform: translateY(0) rotate(0deg);
-      opacity: 1;
+      opacity: 0;
       border-radius: 0;
+    }
+
+    20% {
+      opacity: 0;
+    }
+
+    50% {
+      transform: translateY(-500px) rotate(360deg);
+      opacity: 1;
+      border-radius: 25%;
+    }
+
+    70% {
+      opacity: 0.5;
+      border-radius: 25%;
     }
 
     100% {
