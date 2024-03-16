@@ -38,7 +38,7 @@ export const MainContainer = styled.div`
   -moz-osx-font-smoothing: grayscale;
 `;
 
-export const StyledTextContainer = styled.div`
+export const StyledTextContainer = styled(motion.div)`
   max-width: 42rem;
   margin-left: auto;
   margin-right: auto;

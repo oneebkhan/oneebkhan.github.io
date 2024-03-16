@@ -9,6 +9,7 @@ import {
   RowDescription,
   RowTitle,
   StyledSVG,
+  StyledGoLinkExternal,
 } from "../styles";
 
 export const ProjectScrollCard = ({ content }) => {
@@ -26,14 +27,14 @@ export const ProjectScrollCard = ({ content }) => {
 
   const pathLengthValue = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
-  const PATH = "M0.5 0.980671L0.5 2300";
+  const PATH = "M0.5 0.980671L0.5 2100";
 
   return (
     <PathContainer ref={ref}>
       <StyledSVG
         width="1"
-        height="2300"
-        viewBox="0 0 1 2300"
+        height="2100"
+        viewBox="0 0 1 2100"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -44,10 +45,10 @@ export const ProjectScrollCard = ({ content }) => {
             x1="1"
             y1="-102.823"
             x2="1"
-            y2="2300"
+            y2="2100"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="##c3682c" stop-opacity="0" />
+            <stop stopColor="##c3682c" stopOpacity="0" />
             <stop offset="1" stopColor="#77401c" />
           </linearGradient>
         </defs>
@@ -80,15 +81,32 @@ export const Content = ({ content }) => {
   return (
     <Row>
       <RowTitle
+        viewport={{ once: true }}
+        initial={{ opacity: 0, translateY: -30 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 0.5 }}
         onClick={() => {
           window.open(content.link, "_blank");
         }}
       >
         {content.title}
+        <StyledGoLinkExternal />
       </RowTitle>
-      <RowDescription>{content.description}</RowDescription>
+      <RowDescription
+        viewport={{ once: true }}
+        initial={{ opacity: 0, translateY: -30 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        {content.description}
+      </RowDescription>
       {content.thumbnails && content.thumbnails.length > 0 && (
-        <RowBottomDiv>
+        <RowBottomDiv
+          viewport={{ once: true }}
+          initial={{ opacity: 0, translateX: 30 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
           {content.thumbnails.map((thumbnail) => {
             return (
               <RowBottomDivCard

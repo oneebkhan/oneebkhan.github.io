@@ -9,7 +9,7 @@ import {
 } from "./styles";
 import resume from "../../assets/documents/resume.pdf";
 import Tags from "../Tags";
-import { FaGithub, FaLinkedin, FaReact } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const LIST_OF_SOCIALS = [
   {
@@ -18,7 +18,10 @@ const LIST_OF_SOCIALS = [
     colorprop: "#1a66c3",
     colorproptext: "white",
     onClick: () =>
-      window.open("https://www.linkedin.com/in/oneeb-khan-6b3b701b0/", "_blank"),
+      window.open(
+        "https://www.linkedin.com/in/oneeb-khan-6b3b701b0/",
+        "_blank"
+      ),
   },
   {
     name: "Github",
@@ -32,7 +35,12 @@ const LIST_OF_SOCIALS = [
 const ContactMe = () => {
   return (
     <MainContainer>
-      <StyledTextContainer>
+      <StyledTextContainer
+        viewport={{ once: true }}
+        initial={{ opacity: 0, translateY: -30 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+      >
         <h1>Get in touch</h1>
         <p></p>
         <p>
