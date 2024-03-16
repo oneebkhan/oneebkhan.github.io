@@ -13,7 +13,7 @@ const PROJECTS = [
     title: "Flavorwiki",
     link: "https://tester.flavorwiki.com",
     thumbnails: [flavorwiki3, flavorwiki5],
-    description: `My day job, I usually am in charge fo feature development and bug fixes, but have also designed a re-designed subset of the main application. 
+    description: `My day job, I usually am in charge of feature development and bug fixes, but have also designed a re-designed subset of the main application. 
       The project in question is a platform that provides the most agile and innovative digital platform for consumer understanding, product testing and market research in the industry, worldwide. 
       Powered by A.I and machine learning, FlavorWiki helps companies stay competitive and build winning innovations using real consumers, testing real products, in real life - As stated on their bio`,
   },
