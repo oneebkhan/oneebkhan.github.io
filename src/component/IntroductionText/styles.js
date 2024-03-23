@@ -29,7 +29,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.div`
-  font-size: 3.7rem;
+  font-size: 3.2rem;
   font-weight: bold;
   letter-spacing: 5px;
   opacity: 0.8;
@@ -52,8 +52,9 @@ export const Text = styled.span`
   color: white;
   margin-left: 5px;
   letter-spacing: 13px;
-  font-weight: 100;
-  opacity: 0.6;
+  font-weight: 300;
+  opacity: 0.8;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
 
   @media (max-width: 600px) {

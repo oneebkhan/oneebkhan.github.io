@@ -67,9 +67,9 @@ export const TextContainer = styled.div`
 
 export const Text = styled.span`
   color: white;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.7;
-  opacity: 0.6;
+  opacity: 0.8;
 
   @media (max-width: 600px) {
     font-size: 15px;

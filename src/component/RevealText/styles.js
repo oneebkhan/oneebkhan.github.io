@@ -14,6 +14,7 @@ export const Container = styled(motion.div)`
   white-space: nowrap;
   overflow: hidden;
   font-size: 19vw;
+  font-family: "Fjalla One", "Poppins";
 
   @media (max-width: 600px) {
     font-size: 100px;

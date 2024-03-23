@@ -53,6 +53,7 @@ export const Text = styled.span`
   font-weight: 200;
   line-height: 1.7;
   opacity: 0.6;
+  letter-spacing: 1.2px;
 
   @media (max-width: 600px) {
     font-size: 15px;
