@@ -24,11 +24,6 @@ export const EXPERIENCE_CARDS_GIGALABS = [
     id: 4,
   },
   {
-    url: "https://media.licdn.com/dms/image/D4D1FAQH1RwvyU3dWSw/feedshare-document-images_800/2/1708951938388?e=1710979200&v=beta&t=tb-OJRssErCPmRXb1n5QsdxXZlcN-7gYTkC_DJWBrI8",
-    title: "Title 5",
-    id: 5,
-  },
-  {
     url: "https://media.licdn.com/dms/image/D4D22AQELZChNtRA6TQ/feedshare-shrink_1280/0/1700726948361?e=1712793600&v=beta&t=C8Sp_SELlLEW8MVFdUiVcJi23kiWM7in1leymGz3b9k",
     title: "Title 6",
     id: 6,
