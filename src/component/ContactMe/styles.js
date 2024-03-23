@@ -64,11 +64,15 @@ export const StyledTextContainer = styled(motion.div)`
     margin-right: auto;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    font-size: 0.875rem;
+    font-size: 1rem;
     text-align: center;
     position: relative;
     z-index: 10;
     line-height: 1.5;
+
+    @media (max-width: 700px) {
+      font-size: 0.875rem;
+    }
   }
 `;
 

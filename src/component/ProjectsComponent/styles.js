@@ -17,6 +17,7 @@ export const RowTitle = styled(motion.div)`
   padding-right: 2rem;
   word-break: break-word;
   white-space: normal;
+  max-width: 70vw;
 
   &:hover {
     color: #d59547;
@@ -26,16 +27,16 @@ export const RowTitle = styled(motion.div)`
   }
 
   @media (max-width: 1000px) {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   @media (max-width: 600px) {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 `;
 
 export const RowDescription = styled(motion.div)`
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: normal;
   color: #cbd5e0;
   padding-bottom: 2rem;
@@ -43,6 +44,14 @@ export const RowDescription = styled(motion.div)`
   line-height: 1.5;
   word-break: break-word;
   white-space: normal;
+
+  @media (max-width: 1000px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const RowBottomDiv = styled(motion.div)`

@@ -91,13 +91,13 @@ const SkillsList = () => {
         viewport={{ once: true }}
         initial={{ opacity: 0, translateY: -30 }}
         whileInView={{ opacity: 1, translateY: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.4 }}
       >
           <motion.div
             viewport={{ once: true }}
             initial={{ opacity: 0, translateY: -30 }}
             whileInView={{ opacity: 1, translateY: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
             style={{}}
           >
             <Title>About Me</Title>
@@ -108,7 +108,7 @@ const SkillsList = () => {
                 viewport={{ once: true }}
                 initial={{ opacity: 0, translateY: -30 }}
                 whileInView={{ opacity: 1, translateY: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
+                transition={{ duration: 0.4, delay: 0.2 }}
               >
                 <Text>
                   <p>

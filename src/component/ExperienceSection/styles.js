@@ -66,28 +66,34 @@ export const TextContainer = styled.div`
 `;
 
 export const Text = styled.span`
-  color: white;
-  font-weight: 300;
-  line-height: 1.7;
+  font-size: 1.2rem;
+  font-weight: 400;
   opacity: 0.8;
+  font-weight: normal;
+  color: #cbd5e0;
+  line-height: 1.5;
+  word-break: break-word;
+  white-space: normal;
 
+  @media (max-width: 1000px) {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  
   @media (max-width: 600px) {
-    font-size: 15px;
-    line-height: 1.5;
-    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 1.2;
   }
 `;
 
 export const Title = styled.div`
   font-size: 3.7rem;
   font-weight: bold;
-  letter-spacing: 5px;
   opacity: 0.8;
   text-shadow: 0 2px 4px rgba(71, 97, 206, 0.36);
 
   @media (max-width: 600px) {
     font-size: 35px;
-    letter-spacing: 5px;
   }
 `;
 

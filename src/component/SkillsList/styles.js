@@ -35,28 +35,33 @@ export const Container = styled.div`
 export const Title = styled.div`
   padding-bottom: 1rem;
   text-align: start;
-
   font-size: 3.7rem;
   font-weight: bold;
-  letter-spacing: 5px;
   opacity: 0.8;
   text-shadow: 0 2px 4px rgba(71, 97, 206, 0.36);
 
   @media (max-width: 600px) {
     font-size: 35px;
-    letter-spacing: 5px;
   }
 `;
 
 export const Text = styled.span`
-  color: white;
-  font-weight: 200;
-  line-height: 1.7;
-  opacity: 0.6;
-  letter-spacing: 1.2px;
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: #cbd5e0;
+  opacity: 0.8;
+  line-height: 1.5;
+  word-break: break-word;
+  white-space: normal;
 
+  @media (max-width: 1000px) {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
   @media (max-width: 600px) {
-    font-size: 15px;
+    font-size: 0.8rem;
+    line-height: 1.5;
   }
 `;
 

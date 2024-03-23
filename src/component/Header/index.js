@@ -9,7 +9,7 @@ const Header = () => {
       <motion.div
         initial={{ opacity: 0, translateY: -30 }}
         animate={{ opacity: 1, translateY: 0 }}
-        transition={{ duration: 0.7 }}
+        transition={{ duration: 0.4 }}
       >
         <StyledLogo src={LogoImage} alt="My logo" />
       </motion.div>

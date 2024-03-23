@@ -84,7 +84,7 @@ export const Content = ({ content }) => {
         viewport={{ once: true }}
         initial={{ opacity: 0, translateY: -30 }}
         whileInView={{ opacity: 1, translateY: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.4 }}
         onClick={() => {
           window.open(content.link, "_blank");
         }}
@@ -96,7 +96,7 @@ export const Content = ({ content }) => {
         viewport={{ once: true }}
         initial={{ opacity: 0, translateY: -30 }}
         whileInView={{ opacity: 1, translateY: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
+        transition={{ duration: 0.4, delay: 0.1 }}
       >
         {content.description}
       </RowDescription>
@@ -105,7 +105,7 @@ export const Content = ({ content }) => {
           viewport={{ once: true }}
           initial={{ opacity: 0, translateX: 30 }}
           whileInView={{ opacity: 1, translateX: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
         >
           {content.thumbnails.map((thumbnail) => {
             return (

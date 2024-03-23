@@ -29,22 +29,18 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.div`
-  font-size: 3.2rem;
+  font-size: 3.7rem;
   font-weight: bold;
-  letter-spacing: 5px;
   opacity: 0.8;
   padding-bottom: 5px;
   text-shadow: 0 2px 4px rgba(71, 97, 206, 0.36);
 
   @media (max-width: 600px) {
-    font-size: 40px;
-    font-weight: 100;
-    letter-spacing: 5px;
+    font-size: 2.7rem;
   }
 
   @media (max-width: 400px) {
-    font-size: 35px;
-    letter-spacing: 5px;
+    font-size: 2.2rem;
   }
 `;
 
@@ -54,16 +50,15 @@ export const Text = styled.span`
   letter-spacing: 13px;
   font-weight: 300;
   opacity: 0.8;
-  letter-spacing: 1.2px;
   text-transform: uppercase;
 
   @media (max-width: 600px) {
     font-size: 17px;
-    letter-spacing: 5px;
+    letter-spacing: 6px;
   }
 
   @media (max-width: 400px) {
     font-size: 12px;
-    letter-spacing: 5px;
+    letter-spacing: 6px;
   }
 `;
